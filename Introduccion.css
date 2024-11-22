@@ -68,6 +68,10 @@ nav a:hover {
     top: 0px;
     left: 100px;
 }
+.video {
+    position: relative; 
+    top: 130px; 
+}
 
 .que-es {
     text-align: justify;
@@ -81,19 +85,7 @@ nav a:hover {
     margin-top: 0; 
     margin-bottom: 0; 
 }
-.gif {
-    width: 30%; 
-    text-align: right; 
-    margin-top: 20px;
-    position: relative;
-    top: 90px;
-    left: 50px;
-}
 
-.gif img {
-    width: 100%;
-    border-radius: 8px; 
-}
 
 .card-body {
     font-family: "Cormorant Garamond", serif;

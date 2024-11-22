@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Playwrite+VN:wght@100..400&family=Italiana&display=swap');
+
+body {
+    background-color: #f9f5ed; /* Fondo claro y suave */
+    color: #5c3a3a;
+    font-family: "Itim", cursive; /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Reducido para mayor cercanía */
+    font-family: "Playwrite VN", cursive;
+    color: #8d6f38;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenedor principal */
+.container-main {
+    margin: 20px auto; /* Reducimos el margen superior */
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Bordes más suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #8d6f38; /* Borde más sutil */
+}
+
+/* Encabezado de la sección */
+.header {
+    font-family: "Playwrite VN", cursive;
+    color: #f1f0ee;
+    text-shadow: 1px 1px 3px black;
+    font-size: 180%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0; /* Reducido para que no ocupe tanto espacio */
+    text-align: center;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    margin: 15px 0; /* Reducido margen entre tarjetas */
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+    border-radius: 12px; /* Bordes más redondeados */
+    background-color: #f1c98e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-family: "EB Garamond", serif;
+    color: #5c3a3a;
+    line-height: 1.6;
+    text-align: justify;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body:hover {
+    transform: translateY(-3px); /* Efecto más suave al pasar el ratón */
+}
+
+/* Estilo para el título dentro de la tarjeta */
+.card-body h2 {
+    font-family: "EB Garamond", serif;
+    color: #8d6f38;
+    margin-bottom: 10px;
+    font-size: 1.7em; /* Ajustado para menos espacio */
+}
+
+/* Estilo para los párrafos */
+.card-body p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 220px; /* Reducida la altura */
+    object-fit: cover;
+    border-radius: 8px; /* Bordes menos pronunciados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Para los controles del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #8d6f38;
+    border-radius: 50%;
+}
+
+/* Footer */
+footer {
+    
+    color: white;
+    padding: 10px 0; /* Reducimos el relleno vertical para hacerlo menos alto */
+    text-align: center;
+}
+
+.footer-container {
+    font-family: "EB Garamond", serif;
+    max-width: 1400px; /* Aumentamos el ancho máximo para que sea más amplio */
+    max-height: 200px; /* Reducimos la altura máxima */
+    margin: 0 auto;
+    background-color: #8d6f38;
+    border-radius: 8px;
+    padding: 10px; /* Ajustamos el relleno interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #96753e;
+    padding-top: 5px; /* Reducimos el espacio superior */
+}
+
+.dgti {
+    position: relative;
+    top: 210px; /* Ajustamos la posición */
+    left: -500px;
+}
+
+.cbtis {
+    position: relative;
+    top: 108px; /* Ajustamos la posición */
+    left: 500px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen sobre el Ensayo</title>
+  <link rel="stylesheet" href="C:\Users\julia\Downloads\PROYECTO 3° PARCIAL\CSS\examen.css"> <!-- Vinculamos el archivo CSS -->
+</head>
+<body>
+  <header class="header">
+    <h1 class="display-4">Aprende y Comunica</h1>
+</header>
+<nav class="navigation">
+  <a href="Menu.html">Menú</a>
+        <a href="Introduccion.html">Intoducción</a>
+        <a href="Ensayo.html">Ensayo</a>
+        <a href="Punto de vista.html">Escritor</a>
+        <a href="Tesis.html">Tesis</a>
+        <a href="examen.html">Evaluación</a>
+</nav>
+<div class="examen-titulo">
+  <center>Examen diagnóstico</center>
+</div>
+  <!-- Contenedor Principal -->
+  <div class="container">
+    <div class="quiz-form">
+
+      <!-- Pregunta 1 -->
+      <div class="quiz-question">
+        <h3>1. ¿Qué es un ensayo?</h3>
+        <input type="radio" id="pregunta1_1" name="pregunta1" value="incorrecto">
+        <label for="pregunta1_1">Un artículo de investigación científica.</label>
+
+        <input type="radio" id="pregunta1_2" name="pregunta1" value="correcto">
+        <label for="pregunta1_2">Un escrito en el cual un autor desarrolla sus ideas u opiniones sobre un tema.</label>
+
+        <input type="radio" id="pregunta1_3" name="pregunta1" value="incorrecto">
+        <label for="pregunta1_3">Una novela literaria.</label>
+
+        <input type="radio" id="pregunta1_4" name="pregunta1" value="incorrecto">
+        <label for="pregunta1_4">Un ensayo fotográfico.</label>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="quiz-question">
+        <h3>2. ¿Cuál de las siguientes opciones corresponde a la parte de un ensayo en la que se plantea el tema y se atrae la atención del lector?</h3>
+        <input type="radio" id="pregunta2_1" name="pregunta2" value="incorrecto">
+        <label for="pregunta2_1">Conclusiones</label>
+
+        <input type="radio" id="pregunta2_2" name="pregunta2" value="correcto">
+        <label for="pregunta2_2">Introducción</label>
+
+        <input type="radio" id="pregunta2_3" name="pregunta2" value="incorrecto">
+        <label for="pregunta2_3">Desarrollo</label>
+
+        <input type="radio" id="pregunta2_4" name="pregunta2" value="incorrecto">
+        <label for="pregunta2_4">Título</label>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="quiz-question">
+        <h3>3. ¿Cuál de los siguientes tipos de ensayo busca explicar una temática de manera clara para su comprensión?</h3>
+        <input type="radio" id="pregunta3_1" name="pregunta3" value="incorrecto">
+        <label for="pregunta3_1">Ensayo literario</label>
+
+        <input type="radio" id="pregunta3_2" name="pregunta3" value="incorrecto">
+        <label for="pregunta3_2">Ensayo histórico</label>
+
+        <input type="radio" id="pregunta3_3" name="pregunta3" value="correcto">
+        <label for="pregunta3_3">Ensayo expositivo</label>
+
+        <input type="radio" id="pregunta3_4" name="pregunta3" value="incorrecto">
+        <label for="pregunta3_4">Ensayo científico</label>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="quiz-question">
+        <h3>4. ¿Qué tipo de focalización describe una visión limitada desde la perspectiva de un personaje?</h3>
+        <input type="radio" id="pregunta4_1" name="pregunta4" value="incorrecto">
+        <label for="pregunta4_1">Focalización cero</label>
+
+        <input type="radio" id="pregunta4_2" name="pregunta4" value="correcto">
+        <label for="pregunta4_2">Focalización interna</label>
+
+        <input type="radio" id="pregunta4_3" name="pregunta4" value="incorrecto">
+        <label for="pregunta4_3">Focalización externa</label>
+
+        <input type="radio" id="pregunta4_4" name="pregunta4" value="incorrecto">
+        <label for="pregunta4_4">Focalización omnisciente</label>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="quiz-question">
+        <h3>5. Según el enfoque comunicativo, ¿qué se busca en la enseñanza de la lengua?</h3>
+        <input type="radio" id="pregunta5_1" name="pregunta5" value="incorrecto">
+        <label for="pregunta5_1">Que los estudiantes se centren solo en la gramática.</label>
+
+        <input type="radio" id="pregunta5_2" name="pregunta5" value="correcto">
+        <label for="pregunta5_2">Desarrollar las habilidades para comprender y producir mensajes lingüísticos.</label>
+
+        <input type="radio" id="pregunta5_3" name="pregunta5" value="incorrecto">
+        <label for="pregunta5_3">Que los estudiantes escriban solo textos científicos.</label>
+
+        <input type="radio" id="pregunta5_4" name="pregunta5" value="incorrecto">
+        <label for="pregunta5_4">Que se enfoquen en escribir narrativas literarias.</label>
+      </div>
+
+      <!-- Botón de Enviar -->
+      <button class="submit-btn" onclick="calificar()">Enviar Respuestas</button>
+
+      <!-- Resultado -->
+      <div class="result" id="resultado"></div>
+    </div>
+  </div>
+  <button class="back-btn" onclick="window.location.href = 'Menu.html';">Regresar al Menú</button>
+  <script>
+    // Función para calificar el examen
+    function calificar() {
+      let score = 0;
+      const totalPreguntas = 5; // Cambié el total de preguntas a 5
+
+      // Evaluar las respuestas
+      if (document.getElementById('pregunta1_2').checked) score += 10;
+      if (document.getElementById('pregunta2_2').checked) score += 10;
+      if (document.getElementById('pregunta3_3').checked) score += 10;
+      if (document.getElementById('pregunta4_2').checked) score += 10;
+      if (document.getElementById('pregunta5_2').checked) score += 10;
+
+      // Mostrar resultado
+      const resultadoElement = document.getElementById('resultado');
+      resultadoElement.innerHTML = `Tu puntaje es: ${score} de ${totalPreguntas * 10} puntos.`;
+      resultadoElement.style.display = 'block';
+    }
+  </script>
+ <footer>
+  <div class="dgti">
+      <img src="dgti.png" width="100" height="100" class="imagen-frontal">
+  </div>
+  <div class="cbtis">
+      <img src="cbtis.png" width="100" height="100" class="imagen-frontal">
+  </div>
+
+  <div class="footer-container">
+      <div class="footer-content">
+          <p>Redes sociales y contactos: 
+              <br>
+                  subdireccion.academica@cbtis258.edu.mx
+          </p>
+      <div class="social-links">
+          Instagram
+          <br>
+          <a href="https://www.instagram.com/lengua_y_comunica?igsh=MXhjZmF5M2ozaGRpMA==" target="_blank">@lengua_y_comunica</a>
+      </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 CBTis258</p>
+      </div>
+  </div>
+</footer>
+</body>
+</html>

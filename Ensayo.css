@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Playwrite+VN:wght@100..400&family=Italiana&display=swap');
+
+body {
+    background-color: #ebddc6; 
+    color: #5c3a3a;
+    font-family: "Italiana", serif; 
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+
+.content {
+    margin: 30px;
+    font-family: "Italiana", serif;
+    color: #5c3a3a;
+    text-align: center;
+    font-size: 3em;
+}
+.container {
+    display: flex;
+    justify-content: space-between; 
+    gap:20px;
+    padding: 20px;
+}
+.sabiasque, .ensayo {
+    width: 15%; 
+    background-color: #f1c98e;
+    color: #5c3a3a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Cormorant Garamond", serif; 
+    padding: 20px;
+    text-align: justify;
+    font-size: 19px; 
+}
+.como{
+    width: 60%; 
+    background-color: #f1c98e;
+    color: #5c3a3a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Cormorant Garamond", serif; 
+    padding: 0px;
+    text-align: justify;
+    font-size: 19px; 
+}
+
+.ensayo img, .sabiasque img {
+    max-width: 100%; 
+    height: auto;    
+}
+
+
+
+.como .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.como ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.como ol > li {
+    margin-bottom: 15px;
+}
+
+.como ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.como ul li {
+    margin-top: 5px;
+}
+
+.header {
+    background-image: url("banner2.jpg");
+    font-family: "Playwrite VN", cursive; 
+    color: #f1f0ee;
+    text-shadow: 1px 1px 3px black;
+    font-size: 180%;
+    font-weight: 400;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #8d6f38;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 50px; /* Establece una altura fija menor */
+}
+
+nav a {
+    font-size: 170%;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Italiana", serif; 
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* EMPIEZA EL PIE DE PÁGINA*/
+footer {
+    background-color: #ebddc6;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    font-family: "EB Garamond", serif;
+    max-width: 1400px; /* Aumentamos el ancho máximo para que sea más amplio */
+    max-height: 200px; /* Reducimos la altura máxima */
+    margin: 0 auto;
+    background-color: #8d6f38;
+    border-radius: 8px;
+    padding: 10px; /* Ajustamos el relleno interno */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.footer-content {
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #96753e;
+    padding-top: 10px;
+}
+
+.dgti{
+    position: relative;
+    top: 240px;
+    left: -500px;
+}
+
+.cbtis{
+    position: relative;
+    top: 140px;
+    left: 500px;
+}
+/* TERMINA EL PIE DE PÁGINA*/
+.regreso {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .regreso a {
+    text-decoration: none;
+    background-color: #72412c;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .regreso a:hover {
+    background-color: #c86b3f;
+  }
+
+ 

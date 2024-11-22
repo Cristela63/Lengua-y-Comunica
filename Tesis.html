@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre la Tesis</title>
+    <link rel="stylesheet" href="C:\Users\julia\Downloads\PROYECTO 3° PARCIAL\CSS\Tesis.css" type="text/css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="display-4">Aprende y Comunica</h1>
+    </header>
+    <nav class="navigation">
+        <a href="Menu.html">Menú</a>
+        <a href="Introduccion.html">Intoducción</a>
+        <a href="Ensayo.html">Ensayo</a>
+        <a href="Punto de vista.html">Escritor</a>
+        <a href="Tesis.html">Tesis</a>
+        <a href="examen.html">Evaluación</a>
+    </nav>
+    <div class="que-es">
+        <h2>¿Qué es una Tesis?</h2>
+        <p>Una tesis es un trabajo de investigación que demuestra el conocimiento y la comprensión de un tema específico. Se requiere para obtener un título académico y puede ser el resultado de años de trabajo en un área de estudio específica. Su propósito es contribuir al campo de investigación mediante un análisis profundo y original de un problema o tema.</p>
+    </div>
+
+<div class="estructura">
+        <h2>Estructura de una Tesis</h2>
+        <ul>
+            <li><strong>Portada:</strong> Información sobre el título, autor, institución, y fecha.</li>
+            <li><strong>Resumen:</strong> Breve descripción del contenido y objetivos del estudio.</li>
+            <li><strong>Índice:</strong> Lista de los capítulos y secciones de la tesis.</li>
+            <li><strong>Introducción:</strong> Presentación del tema, objetivo y justificación de la investigación.</li>
+            <li><strong>Marco Teórico:</strong> Revisión de la literatura existente sobre el tema.</li>
+            <li><strong>Metodología:</strong> Descripción del método utilizado para la investigación.</li>
+            <li><strong>Resultados:</strong> Presentación y análisis de los datos obtenidos.</li>
+            <li><strong>Conclusiones:</strong> Reflexiones finales y posibles líneas de investigación futura.</li>
+            <li><strong>Bibliografía:</strong> Fuentes consultadas durante la investigación.</li>
+        </ul>
+    </div>
+
+    <section id="juego">
+        <h2>Juego Interactivo: ¡Construye tu propia Tesis!</h2>
+        <p>En este juego, deberás completar los pasos necesarios para "escribir" tu tesis. Selecciona las respuestas correctas y llega a la meta final.</p>
+
+        <div id="juego-contenido">
+            <div class="game-container">
+                <!-- Columna de preguntas -->
+                <div class="questions">
+                    <p id="texto-pregunta"></p>
+                </div>
+
+                <!-- Columna de respuestas -->
+                <div class="answers">
+                    <button onclick="responder('Introducción')">Introducción</button>
+                    <button onclick="responder('Metodología')">Metodología</button>
+                    <button onclick="responder('Marco Teórico')">Marco Teórico</button>
+                    <button onclick="responder('Resultados')">Resultados</button>
+                    <button onclick="responder('Conclusión')">Conclusión</button>
+                    <button onclick="responder('Bibliografía')">Bibliografía</button>
+                </div>
+            </div>
+
+            <!-- Feedback de respuesta -->
+            <div id="feedback" class="feedback"></div>
+
+            <!-- Resultado final -->
+            <div id="resultado" style="display: none;">
+                <p>¡Felicidades! Has completado el juego. ¡Ahora sabes más sobre las tesis!</p>
+                <button class="restart-btn" onclick="reiniciarJuego()">Reiniciar Juego</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="dgti">
+            <img src="dgti.png" width="100" height="100" class="imagen-frontal">
+        </div>
+        <div class="cbtis">
+            <img src="cbtis.png" width="100" height="100" class="imagen-frontal">
+        </div>
+    
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>Redes sociales y contactos: 
+                    <br>
+                        subdireccion.academica@cbtis258.edu.mx
+                </p>
+            <div class="social-links">
+                Instagram
+                <br>
+                <a href="https://www.instagram.com/lengua_y_comunica?igsh=MXhjZmF5M2ozaGRpMA==" target="_blank">@lengua_y_comunica</a>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CBTis258</p>
+            </div>
+        </div>
+    </footer>
+    <script src="C:\Users\julia\Downloads\PROYECTO 3° PARCIAL\JS\Tesis.js"></script>
+</body>
+</html>

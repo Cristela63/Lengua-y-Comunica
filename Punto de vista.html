@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interactiva - Título y Subtítulo</title>
+    <link rel="stylesheet" href="C:\Users\julia\Downloads\PROYECTO 3° PARCIAL\CSS\Puntodevista.css" type="text/css">
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="display-4">Aprende y Comunica</h1>
+    </header>
+    <nav class="navigation">
+        <a href="Menu.html">Menú</a>
+        <a href="Introduccion.html">Intoducción</a>
+        <a href="Ensayo.html">Ensayo</a>
+        <a href="Punto de vista.html">Escritor</a>
+        <a href="Tesis.html">Tesis</a>
+        <a href="examen.html">Evaluación</a>
+    </nav>
+    <div class="container">
+        <h2>Focalización, Perspectiva o Punto de Vista</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Focalización</th>
+                    <th>Corresponde a:</th>
+                    <th>Características</th>
+                </tr>
+                <tr>
+                    <td>Focalización cero</td>
+                    <td>Narrador omnisciente</td>
+                    <td>Relato no focalizado o denominado también visión por detrás</td>
+                </tr>
+                <tr>
+                    <td>Focalización interna</td>
+                    <td>Narrador protagonista y testigo</td>
+                    <td>Visión desde dentro</td>
+                </tr>
+                <tr>
+                    <td>Focalización externa</td>
+                    <td>Narrador de conocimiento relativo</td>
+                    <td>Visión desde fuera</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="contenedor">
+        <table border="1" cellpadding="10" cellspacing="0">
+            <h2>Cualidades y características del escritor</h2>
+            <thead>
+                <tr>
+                    <th>Cualidades</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Conocimiento del tema</td>
+                    <td>Debe tener un buen entendimiento del tema.</td>
+                </tr>
+                <tr>
+                    <td>Habilidad analítica</td>
+                    <td>Debe ser capaz de analizar críticamente la información, identificar patrones, conexiones y contradicciones.</td>
+                </tr>
+                <tr>
+                    <td>Pensamiento crítico</td>
+                    <td>Debe cuestionar y evaluar distintas perspectivas.</td>
+                </tr>
+                <tr>
+                    <td>Claridad de pensamiento y expresión</td>
+                    <td>Debe de expresar sus ideas de forma clara, precisa y persuasiva.</td>
+                </tr>
+                <tr>
+                    <td>Creatividad</td>
+                    <td>Permite tener un cierto grado de creatividad en la forma en que se presentan los argumentos y se abordan los temas.</td>
+                </tr>
+                <tr>
+                    <td>Curiosidad intelectual</td>
+                    <td>Debe tener una mente abierta y estar dispuesta a explorar nuevas ideasy perspectivas.</td>
+                </tr>
+                <tr>
+                    <td>Capacidad de síntesis</td>
+                    <td>Debe sintetizar la información recopilada de diversas fuentes en un argumento coherente y convincente.</td>
+                </tr>
+                <tr>
+                    <td>Ética académica</td>
+                    <td>Debe adherirse a los principios de integridad académica y evitar el plagio en todas sus formas.</td>
+                </tr>
+                <tr>
+                    <td>Habilidad de revisión y edición</td>
+                    <td>Debe ser capaz de revisar y editar su trabajo de manera crítica para corregir errores gramaticales, mejorar la claridad y coherencia del texto, y garantizar la consistencia de estilo y la presentación.</td>
+                </tr>
+                <tr>
+                    <td>Resilencia y perseverancia</td>
+                    <td>Debe ser capaz de perseverar a través de estos desafíos y mantenerse comprometido con el proceso de escritura hasta que se logre un resultado satisfactorio.</td>
+                </tr>
+                <!-- Puedes agregar más filas aquí -->
+            </tbody>
+        </table>
+    </div>
+       
+
+        <div class="activity-section">
+            <h2>¿Qué son el Título y el Subtítulo en un Ensayo?</h2>
+            <p id="explicacion-texto">
+                El título es la primera impresión que el lector recibe de un ensayo. Debe captar la atención, reflejar el tema principal y ser claro. Un buen título resume de manera efectiva el contenido del ensayo.
+                <br><br>
+                El subtítulo complementa el título, añadiendo información adicional sobre el enfoque del ensayo. Aunque no es obligatorio, su uso ayuda a especificar el objetivo o el área de discusión del trabajo.
+            </p>
+        </div>
+
+        <div class="activity-section">
+            <h2>Actividad: Escribe el número correspondiente</h2>
+            <p>Escribe el número "1" si es un título y "2" si es un subtítulo.</p>
+
+            <div class="input-container">
+                <label for="respuesta-1">1. El Impacto de la Inteligencia Artificial:</label>
+                <input type="text" id="respuesta-1" placeholder="Escribe 1 o 2">
+            </div>
+
+            <div class="input-container">
+                <label for="respuesta-2">2. Nuevas Perspectivas en la Educación:</label>
+                <input type="text" id="respuesta-2" placeholder="Escribe 1 o 2">
+            </div>
+
+            <div class="input-container">
+                <label for="respuesta-3">3. Tecnología y Sociedad: Un Análisis:</label>
+                <input type="text" id="respuesta-3" placeholder="Escribe 1 o 2">
+            </div>
+
+            <div class="input-container">
+                <label for="respuesta-4">4. Avances en la Ciencia del Siglo XXI:</label>
+                <input type="text" id="respuesta-4" placeholder="Escribe 1 o 2">
+            </div>
+
+            <div class="input-container">
+                <button onclick="verificarRespuestas()">Verificar respuestas</button>
+            </div>
+
+            <div id="feedback" class="feedback"></div>
+        </div>
+        <footer>
+            <div class="dgti">
+                <img src="dgti.png" width="100" height="100" class="imagen-frontal">
+            </div>
+            <div class="cbtis">
+                <img src="cbtis.png" width="100" height="100" class="imagen-frontal">
+            </div>
+        
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>Redes sociales y contactos: 
+                        <br>
+                            subdireccion.academica@cbtis258.edu.mx
+                    </p>
+                <div class="social-links">
+                    Instagram
+                    <br>
+                    <a href="https://www.instagram.com/lengua_y_comunica?igsh=MXhjZmF5M2ozaGRpMA==" target="_blank">@lengua_y_comunica</a>
+                </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 CBTis258</p>
+                </div>
+            </div>
+        </footer>
+        <script src="C:\Users\julia\Downloads\PROYECTO 3° PARCIAL\JS\Punto de vista.js"> </script>
+</body>
+</html>
